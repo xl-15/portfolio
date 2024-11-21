@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  animation: fadeInAnimation ease 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+    
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 10;
+  }
+}
+
+
+.navBar{
+    display: flex;
+   
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+
+
+
+fieldset{
+    border-radius: 5px;
+    border: solid black;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+form {
+    border-radius: 20px;
+}
+.radio-block {
+  position: relative;
+  display: flex;
+  min-width: 280px;
+  border: solid var(--blue) 1px;
+  border-radius: 20px;
+  background-color: ;
+  
+}
+/* like parted clouds in the sky, they'll never form the same shape, even blend through again. The words i type down may
+feel the same as common droplets and be left to dry. 
+
+To start a new beginning again. These words fall into this screen, 
+my heart into my grasp it falls,
+this storm i bring upon you holds past winters autumns and falls. the storm in me wishes you again it seems to if youve been morned. 
+Yet i know you have, yet simular to that i have,  but yet did i know then what i know now. And yet these clouds could look once more familier.
+/*  */
+.selected {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  border-radius: 20px;
+  transition: transform 0.2s;
+  background-color: rgb(68, 68, 68);
+}
+
+label {
+  position: relative;
+  z-index: 100;
+  width: 50%;
+  padding: 18px !important;
+  transition: color 0.2s;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+input[type=radio]:checked + label {
+  color: #ffffff;
+}
+
+input[type=radio]:checked + .off-label + .selected {
+  transform: translateX(100%);
+}
+
+/* ------ general style ------ */
+:root {
+  /* --goop: #5b0979; */
+}
+
+
+
+.sr-only, input[type=radio] {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+
+
+
+
+
+
+
+.screenBio{
+    
+    padding: 10px 190px 0 190px;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 150px 120px 120px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 15px;
+    
+    
+}
+.quickBio{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: aliceblue;
+}
+.imgMaybe{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rgb(93, 0, 139);
+    border-radius: 10px;
+}
+.quoteMaybe{
+    background-color: rgb(59, 78, 147);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.logoMaybe{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+.techList{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: deeppink;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+    font-size: 25px;
+}
+.title{
+    background-color: mediumpurple;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    color: aliceblue;
+}
+.workHistory{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;    
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.screenWork{
+  padding: 150px 0 0 0 ;
+  width: 100%;
+  height:;
+  overflow: auto;
+  position: relative;
+  flex-wrap: wrap;
+  display: none;
+  justify-content: center;
+}
+.workSpot{
+  padding: 150px;
+  margin: 20px;
+  background-color: cornflowerblue;
+}
+
+
+@media(max-width: 660px){
+  .screenBio{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+
+  }
+  .imgMaybe{
+    height: 100px;
+  }
+  .quoteMaybe{
+    height: 300px;
+    width: 50%;
+  }
+  .logoMaybe{
+    height: 200px;
+    width: 50%;
+    margin-left: 150px;
+  }
+  .techList{
+    height: 200px;
+  }
+  .title{
+    height: 100px;
+  }
+  .workHistory{
+    height: 200px;
+  }
+
+
+
+
+
+
+
+
+
+  .screenWork{
+    padding: 10px;
+    height: ;
+  }
+}
+
