@@ -211,13 +211,13 @@ input[type=radio]:checked + .off-label + .selected {
 
 
 
-@media(min-width:660px){
+@media(min-width:790px){
   .screenBio{
     display: grid;
   }
 }
 
-@media(max-width: 660px){
+@media(max-width: 790px){
   .screenBio{
     padding: 10px;
     display: flex;

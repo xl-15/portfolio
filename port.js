@@ -10,7 +10,7 @@ function showWorkPage(){
 }
 
 function showBioPage(){
-   if(window.innerWidth < 660){
+   if(window.innerWidth < 790){
     bioPage.style.display='flex'
     workPage.style.display= 'none'
    }
@@ -22,13 +22,13 @@ function showBioPage(){
    
 }
 function screenSize(){
-    if(window.innerWidth < 660){
+    if(window.innerWidth < 790){
     bioPage.style.display='flex'
     workPage.style.display= 'none'
     }
 }
 function screenSize2(){
-    if(window.innerWidth >660){
+    if(window.innerWidth > 790){
     bioPage.style.display='grid'
     workPage.style.display= 'none'
     }
