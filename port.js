@@ -21,5 +21,16 @@ function showBioPage(){
    
    
 }
-
- 
+function screenSize(){
+    if(window.innerWidth < 660){
+    bioPage.style.display='flex'
+    workPage.style.display= 'none'
+    }
+}
+function screenSize2(){
+    if(window.innerWidth >660){
+    bioPage.style.display='grid'
+    workPage.style.display= 'none'
+    }
+}
+// if window is > than 660, display bioPage.style.display='grid'

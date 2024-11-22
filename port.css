@@ -210,6 +210,13 @@ input[type=radio]:checked + .off-label + .selected {
 }
 
 
+
+@media(min-width:660px){
+  .screenBio{
+    display: grid;
+  }
+}
+
 @media(max-width: 660px){
   .screenBio{
     padding: 10px;
