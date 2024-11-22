@@ -29,7 +29,6 @@ body{
 
 .navBar{
     display: flex;
-   
     justify-content: center;
     padding-top: 10px;
 }
@@ -222,20 +221,23 @@ input[type=radio]:checked + .off-label + .selected {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     grid-gap: 0;
 
   }
   .imgMaybe{
     height: 100px;
+    width: 50%;
+    margin-left: 100px;
   }
   .quoteMaybe{
-    height: 300px;
+    height: 200px;
     width: 50%;
   }
   .logoMaybe{
     height: 200px;
     width: 50%;
-    margin-left: 150px;
+    margin-left: 165px;
   }
   .techList{
     height: 200px;
