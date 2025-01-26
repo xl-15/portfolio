@@ -56,14 +56,10 @@ form {
   background-color: ;
   
 }
-/* like parted clouds in the sky, they'll never form the same shape, even blend through again. The words i type down may
-feel the same as common droplets and be left to dry. 
 
-To start a new beginning again. These words fall into this screen, 
-my heart into my grasp it falls,
-this storm i bring upon you holds past winters autumns and falls. the storm in me wishes you again it seems to if youve been morned. 
-Yet i know you have, yet simular to that i have,  but yet did i know then what i know now. And yet these clouds could look once more familier.
-/*  */
+
+
+
 .selected {
   position: absolute;
   top: 1px;
@@ -169,12 +165,16 @@ input[type=radio]:checked + .off-label + .selected {
 .techList{
     grid-row-start: 3;
     grid-row-end: 6;
-    background-color: deeppink;
+    background-color: rgb(233, 211, 223);
     border-radius: 10px;
     text-align: center;
     padding-top: 20px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 25px;
+}
+.techList img{
+  width: 200px;
+  padding-top: 35px;
 }
 .title{
     background-color: mediumpurple;
@@ -182,15 +182,11 @@ input[type=radio]:checked + .off-label + .selected {
     text-align: center;
     padding-top: 30px;
     color: aliceblue;
-}
-.workHistory{
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4;    
-    background-color: aqua;
-    border-radius: 10px;
-}
+} 
+
+
+
+
 
 .screenWork{
   padding: 150px 0 0 0 ;
@@ -210,13 +206,11 @@ input[type=radio]:checked + .off-label + .selected {
 
 
 
-@media(min-width:900px){
-  .screenBio{
-    display: grid;
-  }
+@media(min-width: 967px){
+  
 }
 
-@media(max-width: 900px){
+@media(max-width:  967px){
   .screenBio{
     padding: 10px;
     display: flex;
@@ -226,40 +220,36 @@ input[type=radio]:checked + .off-label + .selected {
 
   }
   .imgMaybe{
+    margin-top: 40px;
     height: 100px;
     width: 50%;
-    margin-left: 100px;
+    margin-left: 165px;
   }
   .quoteMaybe{
+    margin-top: 40px;
     height: 200px;
     width: 50%;
   }
   .logoMaybe{
+    margin-top: 40px;
     height: 200px;
     width: 50%;
     margin-left: 165px;
   }
   .techList{
+    margin-top: 40px;
     height: 200px;
   }
+  
   .title{
     height: 100px;
   }
   .workHistory{
     height: 200px;
   }
-
-
-
-
-
-
-
-
-
   .screenWork{
     padding: 10px;
     height: ;
   }
-}
+}  */
 
