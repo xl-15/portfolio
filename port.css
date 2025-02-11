@@ -18,7 +18,7 @@ body{
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+      opacity: 1;
   }
 
   100% {
@@ -191,11 +191,9 @@ input[type=radio]:checked + .off-label + .selected {
 .screenWork{
   padding: 150px 0 0 0 ;
   width: 100%;
-  height:;
   overflow: auto;
   position: relative;
   flex-wrap: wrap;
-  display: none;
   justify-content: center;
 }
 .workSpot{
@@ -206,11 +204,14 @@ input[type=radio]:checked + .off-label + .selected {
 
 
 
-@media(min-width: 967px){
-  
+@media(min-width: 767px){
+  .body{
+    display: inline;
+  }
+
 }
 
-@media(max-width:  967px){
+@media(max-width:  767px){
   .screenBio{
     padding: 10px;
     display: flex;
@@ -219,37 +220,9 @@ input[type=radio]:checked + .off-label + .selected {
     grid-gap: 0;
 
   }
-  .imgMaybe{
-    margin-top: 40px;
-    height: 100px;
-    width: 50%;
-    margin-left: 165px;
-  }
-  .quoteMaybe{
-    margin-top: 40px;
-    height: 200px;
-    width: 50%;
-  }
-  .logoMaybe{
-    margin-top: 40px;
-    height: 200px;
-    width: 50%;
-    margin-left: 165px;
-  }
-  .techList{
-    margin-top: 40px;
-    height: 200px;
-  }
   
-  .title{
-    height: 100px;
-  }
-  .workHistory{
-    height: 200px;
-  }
   .screenWork{
     padding: 10px;
-    height: ;
   }
-}  */
+}  
 
