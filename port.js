@@ -22,4 +22,4 @@ function showBioPage(){
    
 }
 
-// if window is > than 660, display bioPage.style.display='grid'
+
