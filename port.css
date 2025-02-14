@@ -3,15 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
+*::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
 body{
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0);
   animation: fadeInAnimation ease 4s;
             animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-    
+            animation-fill-mode: forwards;    
 }
 
 
@@ -31,6 +35,7 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    width: 100%;
 }
 
 
@@ -118,7 +123,7 @@ input[type=radio]:checked + .off-label + .selected {
 
 .screenBio{
     
-    padding: 10px 190px 0 190px;
+    padding: 10%;
     display: grid;
     width: 100%;
     grid-template-rows: 150px 120px 120px 100px 100px;
@@ -146,6 +151,9 @@ input[type=radio]:checked + .off-label + .selected {
     background-color: rgb(93, 0, 139);
     border-radius: 10px;
 }
+.imageHere{
+   
+}
 .quoteMaybe{
     background-color: rgb(59, 78, 147);
     border-radius: 10px;
@@ -165,7 +173,7 @@ input[type=radio]:checked + .off-label + .selected {
 .techList{
     grid-row-start: 3;
     grid-row-end: 6;
-    background-color: rgb(233, 211, 223);
+    background-color: rgb(77, 72, 125);
     border-radius: 10px;
     text-align: center;
     padding-top: 20px;
@@ -191,6 +199,7 @@ input[type=radio]:checked + .off-label + .selected {
 .screenWork{
   padding: 150px 0 0 0 ;
   width: 100%;
+  display: none;
   overflow: auto;
   position: relative;
   flex-wrap: wrap;
@@ -206,21 +215,30 @@ input[type=radio]:checked + .off-label + .selected {
 
 @media(min-width: 767px){
   .body{
-    display: inline;
+    display: flex;
   }
 
 }
 
-@media(max-width:  767px){
+@media(max-width:  394px){
   .screenBio{
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     grid-gap: 0;
 
   }
-  
+  .imgMaybe{
+    background-color: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .imageHere{
+    width: 100%;
+    border-radius: 10px;
+    background-color: blueviolet;
+  }
   .screenWork{
     padding: 10px;
   }
